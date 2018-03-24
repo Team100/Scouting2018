@@ -52,7 +52,7 @@ def code():
     e = str(main())
     if bytes(e, 'utf-8').startswith(b'b'):
         e = e[2:-1]
-    s = list(e.split(":")) 
+    s = list(e.split("|")) 
     return s
 
 if __name__ == "__main__":
