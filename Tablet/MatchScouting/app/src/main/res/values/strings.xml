@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Match Scouting 2018</string>
+    <string name="text">Text</string>
+    <string name="qr">Generate QR Code</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="exit">Tap to exit</string>
+    <string name="qr_description">QR Code</string>
+    <string name="aline">Cross auto line?</string>
+    <string name="acube">Cube(s) placed?</string>
+    <string name="tswitch">Switch:</string>
+    <string name="scale">Scale:</string>
+
+    <string-array name="ten">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="five">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="title_activity_qual">QualActivity</string>
+</resources>
