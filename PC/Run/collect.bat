@@ -1,1 +1,1 @@
-python3 	../Main.py
+python 	../Files/Main.py
