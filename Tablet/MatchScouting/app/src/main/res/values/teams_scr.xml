@@ -1,142 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <integer name="teams">66</integer>
+<!--    <integer name="teams">66</integer>-->
 
-    <string name="team1">100</string>
-    <string name="team2">199</string>
-    <string name="team3">295</string>
-    <string name="team4">383</string>
-    <string name="team5">692</string>
-    <string name="team6">701</string>
-    <string name="team6.5">852</string>
-    <string name="team7">981</string>
-    <string name="team8">1072</string>
-    <string name="team8.5">1280</string>
-    <string name="team9">1323</string>
-    <string name="team10">1351</string>
-    <string name="team11">1458</string>
-    <string name="team12">1662</string>
-    <string name="team13">1671</string>
-    <string name="team14">1678</string>
-    <string name="team15">2035</string>
-    <string name="team16">2073</string>
-    <string name="team17">2085</string>
-    <string name="team18">2141</string>
-    <string name="team19">2144</string>
-    <string name="team20">2204</string>
-    <string name="team21">2367</string>
-    <string name="team22">2551</string>
-    <string name="team23">3013</string>
-    <string name="team24">3189</string>
-    <string name="team25">3250</string>
-    <string name="team26">3256</string>
-    <string name="team27">3257</string>
-    <string name="team27.5">3303</string>
-    <string name="team28">3482</string>
-    <string name="team29">3501</string>
-    <string name="team30">3598</string>
-    <string name="team31">3615</string>
-    <string name="team32">3669</string>
-    <string name="team33">3859</string>
-    <string name="team34">3880</string>
-    <string name="team34.5">3970</string>
-    <string name="team35">4135</string>
-    <string name="team36">4171</string>
-    <string name="team37">4643</string>
-    <string name="team38">4698</string>
-    <string name="team39">5250</string>
-    <string name="team40">5274</string>
-    <string name="team41">5458</string>
-    <string name="team42">5480</string>
-    <string name="team43">5496</string>
-    <string name="team44">5507</string>
-    <string name="team45">5728</string>
-    <string name="team46">5817</string>
-    <string name="team47">5940</string>
-    <string name="team48">6039</string>
-    <string name="team49">6059</string>
-    <string name="team50">6174</string>
-    <string name="team51">6238</string>
-    <string name="team52">6305</string>
-    <string name="team53">6398</string>
-    <string name="team54">6474</string>
-    <string name="team55">6612</string>
-    <string name="team56">6619</string>
-    <string name="team57">6644</string>
-    <string name="team58">6822</string>
-    <string name="team59">6918</string>
-    <string name="team60">7057</string>
-    <string name="team61">7229</string>
-    <string name="team61.5">7308</string>
+<!--    <string name="team1">100</string>-->
+<!--    <string name="team2">199</string>-->
+<!--    <string name="team3">295</string>-->
+<!--    <string name="team4">383</string>-->
+<!--    <string name="team5">692</string>-->
+<!--    <string name="team6">701</string>-->
+<!--    <string name="team6.5">852</string>-->
+<!--    <string name="team7">981</string>-->
+<!--    <string name="team8">1072</string>-->
+<!--    <string name="team8.5">1280</string>-->
+<!--    <string name="team9">1323</string>-->
+<!--    <string name="team10">1351</string>-->
+<!--    <string name="team11">1458</string>-->
+<!--    <string name="team12">1662</string>-->
+<!--    <string name="team13">1671</string>-->
+<!--    <string name="team14">1678</string>-->
+<!--    <string name="team15">2035</string>-->
+<!--    <string name="team16">2073</string>-->
+<!--    <string name="team17">2085</string>-->
+<!--    <string name="team18">2141</string>-->
+<!--    <string name="team19">2144</string>-->
+<!--    <string name="team20">2204</string>-->
+<!--    <string name="team21">2367</string>-->
+<!--    <string name="team22">2551</string>-->
+<!--    <string name="team23">3013</string>-->
+<!--    <string name="team24">3189</string>-->
+<!--    <string name="team25">3250</string>-->
+<!--    <string name="team26">3256</string>-->
+<!--    <string name="team27">3257</string>-->
+<!--    <string name="team27.5">3303</string>-->
+<!--    <string name="team28">3482</string>-->
+<!--    <string name="team29">3501</string>-->
+<!--    <string name="team30">3598</string>-->
+<!--    <string name="team31">3615</string>-->
+<!--    <string name="team32">3669</string>-->
+<!--    <string name="team33">3859</string>-->
+<!--    <string name="team34">3880</string>-->
+<!--    <string name="team34.5">3970</string>-->
+<!--    <string name="team35">4135</string>-->
+<!--    <string name="team36">4171</string>-->
+<!--    <string name="team37">4643</string>-->
+<!--    <string name="team38">4698</string>-->
+<!--    <string name="team39">5250</string>-->
+<!--    <string name="team40">5274</string>-->
+<!--    <string name="team41">5458</string>-->
+<!--    <string name="team42">5480</string>-->
+<!--    <string name="team43">5496</string>-->
+<!--    <string name="team44">5507</string>-->
+<!--    <string name="team45">5728</string>-->
+<!--    <string name="team46">5817</string>-->
+<!--    <string name="team47">5940</string>-->
+<!--    <string name="team48">6039</string>-->
+<!--    <string name="team49">6059</string>-->
+<!--    <string name="team50">6174</string>-->
+<!--    <string name="team51">6238</string>-->
+<!--    <string name="team52">6305</string>-->
+<!--    <string name="team53">6398</string>-->
+<!--    <string name="team54">6474</string>-->
+<!--    <string name="team55">6612</string>-->
+<!--    <string name="team56">6619</string>-->
+<!--    <string name="team57">6644</string>-->
+<!--    <string name="team58">6822</string>-->
+<!--    <string name="team59">6918</string>-->
+<!--    <string name="team60">7057</string>-->
+<!--    <string name="team61">7229</string>-->
+<!--    <string name="team61.5">7308</string>-->
 
-    <string-array name="teams">
-        <item>@string/team1</item>
-        <item>@string/team2</item>
-        <item>@string/team3</item>
-        <item>@string/team4</item>
-        <item>@string/team5</item>
-        <item>@string/team6</item>
-        <item>@string/team6.5</item>
-        <item>@string/team7</item>
-        <item>@string/team8</item>
-        <item>@string/team8.5</item>
-        <item>@string/team9</item>
-        <item>@string/team10</item>
-        <item>@string/team11</item>
-        <item>@string/team12</item>
-        <item>@string/team13</item>
-        <item>@string/team14</item>
-        <item>@string/team15</item>
-        <item>@string/team16</item>
-        <item>@string/team17</item>
-        <item>@string/team18</item>
-        <item>@string/team19</item>
-        <item>@string/team20</item>
-        <item>@string/team21</item>
-        <item>@string/team22</item>
-        <item>@string/team23</item>
-        <item>@string/team24</item>
-        <item>@string/team25</item>
-        <item>@string/team26</item>
-        <item>@string/team27</item>
-        <item>@string/team27.5</item>
-        <item>@string/team28</item>
-        <item>@string/team29</item>
-        <item>@string/team30</item>
-        <item>@string/team31</item>
-        <item>@string/team32</item>
-        <item>@string/team33</item>
-        <item>@string/team34</item>
-        <item>@string/team34.5</item>
-        <item>@string/team35</item>
-        <item>@string/team36</item>
-        <item>@string/team37</item>
-        <item>@string/team38</item>
-        <item>@string/team39</item>
-        <item>@string/team40</item>
-        <item>@string/team41</item>
-        <item>@string/team42</item>
-        <item>@string/team43</item>
-        <item>@string/team44</item>
-        <item>@string/team45</item>
-        <item>@string/team46</item>
-        <item>@string/team47</item>
-        <item>@string/team48</item>
-        <item>@string/team49</item>
-        <item>@string/team50</item>
-        <item>@string/team51</item>
-        <item>@string/team52</item>
-        <item>@string/team53</item>
-        <item>@string/team54</item>
-        <item>@string/team55</item>
-        <item>@string/team56</item>
-        <item>@string/team57</item>
-        <item>@string/team58</item>
-        <item>@string/team59</item>
-        <item>@string/team60</item>
-        <item>@string/team61</item>
-        <item>@string/team61.5</item>
-    </string-array>
+<!--    <string-array name="teams">-->
+<!--        <item>@string/team1</item>-->
+<!--        <item>@string/team2</item>-->
+<!--        <item>@string/team3</item>-->
+<!--        <item>@string/team4</item>-->
+<!--        <item>@string/team5</item>-->
+<!--        <item>@string/team6</item>-->
+<!--        <item>@string/team6.5</item>-->
+<!--        <item>@string/team7</item>-->
+<!--        <item>@string/team8</item>-->
+<!--        <item>@string/team8.5</item>-->
+<!--        <item>@string/team9</item>-->
+<!--        <item>@string/team10</item>-->
+<!--        <item>@string/team11</item>-->
+<!--        <item>@string/team12</item>-->
+<!--        <item>@string/team13</item>-->
+<!--        <item>@string/team14</item>-->
+<!--        <item>@string/team15</item>-->
+<!--        <item>@string/team16</item>-->
+<!--        <item>@string/team17</item>-->
+<!--        <item>@string/team18</item>-->
+<!--        <item>@string/team19</item>-->
+<!--        <item>@string/team20</item>-->
+<!--        <item>@string/team21</item>-->
+<!--        <item>@string/team22</item>-->
+<!--        <item>@string/team23</item>-->
+<!--        <item>@string/team24</item>-->
+<!--        <item>@string/team25</item>-->
+<!--        <item>@string/team26</item>-->
+<!--        <item>@string/team27</item>-->
+<!--        <item>@string/team27.5</item>-->
+<!--        <item>@string/team28</item>-->
+<!--        <item>@string/team29</item>-->
+<!--        <item>@string/team30</item>-->
+<!--        <item>@string/team31</item>-->
+<!--        <item>@string/team32</item>-->
+<!--        <item>@string/team33</item>-->
+<!--        <item>@string/team34</item>-->
+<!--        <item>@string/team34.5</item>-->
+<!--        <item>@string/team35</item>-->
+<!--        <item>@string/team36</item>-->
+<!--        <item>@string/team37</item>-->
+<!--        <item>@string/team38</item>-->
+<!--        <item>@string/team39</item>-->
+<!--        <item>@string/team40</item>-->
+<!--        <item>@string/team41</item>-->
+<!--        <item>@string/team42</item>-->
+<!--        <item>@string/team43</item>-->
+<!--        <item>@string/team44</item>-->
+<!--        <item>@string/team45</item>-->
+<!--        <item>@string/team46</item>-->
+<!--        <item>@string/team47</item>-->
+<!--        <item>@string/team48</item>-->
+<!--        <item>@string/team49</item>-->
+<!--        <item>@string/team50</item>-->
+<!--        <item>@string/team51</item>-->
+<!--        <item>@string/team52</item>-->
+<!--        <item>@string/team53</item>-->
+<!--        <item>@string/team54</item>-->
+<!--        <item>@string/team55</item>-->
+<!--        <item>@string/team56</item>-->
+<!--        <item>@string/team57</item>-->
+<!--        <item>@string/team58</item>-->
+<!--        <item>@string/team59</item>-->
+<!--        <item>@string/team60</item>-->
+<!--        <item>@string/team61</item>-->
+<!--        <item>@string/team61.5</item>-->
+<!--    </string-array>-->
 
 </resources>

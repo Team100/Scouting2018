@@ -1,51 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--
-    <integer name="teams">43</integer>
+    <integer name="teams">42</integer>
 
     <string name="team1">100</string>
-    <string name="team2">199</string>
-    <string name="team3">253</string>
-    <string name="team4">581</string>
+    <string name="team2">115</string>
+    <string name="team3">199</string>
+    <string name="team4">253</string>
     <string name="team5">604</string>
     <string name="team6">649</string>
-    <string name="team7">766</string>
-    <string name="team8">971</string>
-    <string name="team9">972</string>
-    <string name="team10">973</string>
-    <string name="team11">1458</string>
-    <string name="team12">2383</string>
-    <string name="team13">2489</string>
-    <string name="team14">2551</string>
-    <string name="team15">2854</string>
-    <string name="team16">3880</string>
-    <string name="team17">4159</string>
-    <string name="team18">4186</string>
-    <string name="team19">4669</string>
-    <string name="team20">4765</string>
-    <string name="team21">4904</string>
-    <string name="team22">4973</string>
-    <string name="team23">5026</string>
-    <string name="team24">5104</string>
-    <string name="team25">5419</string>
-    <string name="team26">5430</string>
-    <string name="team27">5499</string>
-    <string name="team28">5507</string>
-    <string name="team29">5700</string>
-    <string name="team30">5924</string>
-    <string name="team31">5940</string>
-    <string name="team32">5993</string>
-    <string name="team33">6036</string>
-    <string name="team34">6415</string>
-    <string name="team35">6418</string>
-    <string name="team36">6662</string>
-    <string name="team37">6665</string>
-    <string name="team38">6718</string>
-    <string name="team39">6814</string>
-    <string name="team40">6962</string>
-    <string name="team41">6981</string>
-    <string name="team42">7137</string>
-    <string name="team43">7317</string>
+    <string name="team7">670</string>
+    <string name="team8">840</string>
+    <string name="team9">841</string>
+    <string name="team10">846</string>
+    <string name="team11">971</string>
+    <string name="team12">2473</string>
+    <string name="team13">2551</string>
+    <string name="team14">3880</string>
+    <string name="team15">3970</string>
+    <string name="team16">4159</string>
+    <string name="team17">4186</string>
+    <string name="team18">4669</string>
+    <string name="team19">4765</string>
+    <string name="team20">4973</string>
+    <string name="team21">4990</string>
+    <string name="team22">5430</string>
+    <string name="team23">5507</string>
+    <string name="team24">5700</string>
+    <string name="team25">5924</string>
+    <string name="team26">6238</string>
+    <string name="team27">6418</string>
+    <string name="team28">6814</string>
+    <string name="team29">6822</string>
+    <string name="team30">6962</string>
+    <string name="team31">7245</string>
+    <string name="team32">7468</string>
+    <string name="team33">7563</string>
+    <string name="team34">7565</string>
+    <string name="team35">7686</string>
+    <string name="team36">8016</string>
+    <string name="team37">8045</string>
+    <string name="team38">8159</string>
+    <string name="team39">8751</string>
+    <string name="team40">8793</string>
+    <string name="team41">8840</string>
+    <string name="team42">8852</string>
 
     <string-array name="teams">
         <item>@string/team1</item>
@@ -90,7 +88,5 @@
         <item>@string/team40</item>
         <item>@string/team41</item>
         <item>@string/team42</item>
-        <item>@string/team43</item>
     </string-array>
-    -->
 </resources>

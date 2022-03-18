@@ -12,6 +12,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TabHost;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -60,67 +61,108 @@ public class MainActivity extends AppCompatActivity {
         qual();
     }
 
+    public void refreshInit(View v) {
+        boolean done = true;
+
+        done &= (findViewById(((RadioGroup)findViewById(R.id.allianceRadioGroup))
+                .getCheckedRadioButtonId()) != null);
+        done &= (findViewById(((RadioGroup)findViewById(R.id.stationRadioGroup))
+                .getCheckedRadioButtonId()) != null);
+        done &= (findViewById(((RadioGroup)findViewById(R.id.matchTypeRadioGroup))
+                .getCheckedRadioButtonId()) != null);
+        done &= (findViewById(((RadioGroup)findViewById(R.id.teleClimbRadioGroup))
+                .getCheckedRadioButtonId()) != null);
+
+        findViewById(R.id.finishButton).setEnabled(done);
+    }
+
+    public void count(View view) {
+        boolean up;
+        int target;
+
+        int id = view.getId();
+        if (id == R.id.autoHighGoalDec || id == R.id.autoHighGoalInc) {
+            target = R.id.autoHighGoalCount;
+        } else if (id == R.id.autoLowGoalDec || id == R.id.autoLowGoalInc) {
+            target = R.id.autoLowGoalCount;
+        } else if (id == R.id.teleHighGoalDec || id == R.id.teleHighGoalInc) {
+            target = R.id.teleHighGoalCount;
+        } else {
+            target = R.id.teleLowGoalCount;
+        }
+
+        up = (id == R.id.autoHighGoalInc || id == R.id.autoLowGoalInc ||
+              id == R.id.teleHighGoalInc || id == R.id.teleLowGoalInc);
+
+        TextView textView = findViewById(target);
+        int value = Integer.parseInt(textView.getText().toString());
+        if (up || value > 0) {
+            value += up ? 1 : -1;
+            textView.setText(String.valueOf(value));
+        }
+    }
+
     public String getData(String qual){
-        //Link XML objects to Java objects\
-        Spinner spinner4 = findViewById(R.id.spinner4);
-        EditText editText = findViewById(R.id.editText5);
-        RadioGroup radioGroup3 = findViewById(R.id.radioGroup3);
-        RadioGroup radioGroup2 = findViewById(R.id.radioGroup2);
-        RadioGroup radioGroup = findViewById(R.id.radioGroup);
-        CheckBox checkBoxALine = findViewById(R.id.checkBoxALine);
-        CheckBox checkBoxACube = findViewById(R.id.checkBoxACube);
-        Spinner spinner = findViewById(R.id.spinner);
-        Spinner spinner2 = findViewById(R.id.spinner2);
-        CheckBox checkBox2 = findViewById(R.id.checkBox2);
-        Spinner spinner5 = findViewById(R.id.spinner5);
-        Spinner spinner6 = findViewById(R.id.spinner6);
-        Spinner spinner7 = findViewById(R.id.spinner7);
-        CheckBox checkBox3 = findViewById(R.id.checkBox3);
-        CheckBox checkBox4 = findViewById(R.id.checkBox4);
-        CheckBox checkBox5 = findViewById(R.id.checkBox5);
-        Spinner spinner8 = findViewById(R.id.spinner8);
-        Spinner spinner9 = findViewById(R.id.spinner9);
-        CheckBox checkBox6 = findViewById(R.id.checkBox6);
-        CheckBox checkBox8 = findViewById(R.id.checkBox8);
-        CheckBox checkBox7 = findViewById(R.id.checkBox7);
-        CheckBox checkBox9 = findViewById(R.id.checkBox9);
+        // Link XML objects to Java objects
+        Spinner teamNumberSpinner = findViewById(R.id.teamNumberSpinner);
+        EditText matchNumberInput = findViewById(R.id.matchNumberInput);
+        RadioGroup allianceRadioGroup = findViewById(R.id.allianceRadioGroup);
+        RadioGroup stationRadioGroup = findViewById(R.id.stationRadioGroup);
+        RadioGroup matchTypeRadioGroup = findViewById(R.id.matchTypeRadioGroup);
 
-        //Radio Group Init
-        String rgb2=((RadioButton)this.findViewById(radioGroup2.getCheckedRadioButtonId())).getText().toString();
-        String rgb3=((RadioButton)this.findViewById(radioGroup3.getCheckedRadioButtonId())).getText().toString();
-        String rgb = ((RadioButton)this.findViewById(radioGroup.getCheckedRadioButtonId())).getText().toString();
+        TextView autoHighGoalCount = findViewById(R.id.autoHighGoalCount);
+        TextView autoLowGoalCount = findViewById(R.id.autoLowGoalCount);
+        CheckBox autoExitCheckbox = findViewById(R.id.autoExitCheckbox);
 
-        //Get object values
-        String sS4 = spinner4.getSelectedItem().toString();
-        String sET4 = editText.getText().toString();
-        String sRG3 = rgb3;
-        String sRG2 = rgb2;
-        String sRG = rgb;
-        String sCBAL = String.valueOf(checkBoxALine.isChecked());
-        String sCBAC = String.valueOf(checkBoxACube.isChecked());
-        String sS = spinner.getSelectedItem().toString();
-        String sS2 = spinner2.getSelectedItem().toString();
-        String sCB2 = String.valueOf(checkBox2.isChecked());
-        String sS5 = spinner5.getSelectedItem().toString();
-        String sS6 = spinner6.getSelectedItem().toString();
-        String sS7 = spinner7.getSelectedItem().toString();
-        String sCB3 = String.valueOf(checkBox3.isChecked());
-        String sCB4 = String.valueOf(checkBox4.isChecked());
-        String sCB5 = String.valueOf(checkBox5.isChecked());
-        String sS8 = spinner8.getSelectedItem().toString();
-        String sS9 = spinner9.getSelectedItem().toString();
-        String sCB6 = String.valueOf(checkBox6.isChecked());
-        String sCB8 = String.valueOf(checkBox8.isChecked());
-        String sCB7 = String.valueOf(checkBox7.isChecked());
-        String sCB9 = String.valueOf(checkBox9.isChecked());
+        TextView teleHighGoalCount = findViewById(R.id.teleHighGoalCount);
+        TextView teleLowGoalCount = findViewById(R.id.teleLowGoalCount);
+        RadioGroup teleClimbRadioGroup = findViewById(R.id.teleClimbRadioGroup);
 
-        String fin = sS4 + "^" + sET4 + "^" + sRG3 + "^" + sRG2 + "^" + sRG
-                + "^" + sCBAL + "^" + sCBAC + "^" + sS + "^" + sS2 + "^" + sCB2
-                + "^" + sS5 + "^" + sS6 + "^" + sS7 + "^" + sCB3 + "^" + sCB4
-                + "^" + sCB5 + "^" + sS8 + "^" + sS9 + "^" + sCB6 + "^" + sCB8
-                + "^" + sCB7 + "^" + sCB9 + "^" + qual;
+        Spinner foulSpinner = findViewById(R.id.foulSpinner);
+        Spinner techFoulSpinner = findViewById(R.id.techFoulSpinner);
+        CheckBox yellowCardCheckbox = findViewById(R.id.yellowCardCheckbox);
+        CheckBox redCardCheckbox = findViewById(R.id.redCardCheckbox);
+        CheckBox disabledCheckbox = findViewById(R.id.disabledCheckbox);
+        CheckBox brokenCheckbox = findViewById(R.id.brokenCheckbox);
+
+        // Radio Group Init
+        RadioButton alliance = findViewById(allianceRadioGroup.getCheckedRadioButtonId());
+        RadioButton station = findViewById(stationRadioGroup.getCheckedRadioButtonId());
+        RadioButton matchType = findViewById(matchTypeRadioGroup.getCheckedRadioButtonId());
+        RadioButton climbLevel = findViewById(teleClimbRadioGroup.getCheckedRadioButtonId());
+
+        // Get object values
+        String[] params = {
+                teamNumberSpinner.getSelectedItem().toString(),
+                matchNumberInput.getText().toString(),
+                alliance.getText().toString(),
+                station.getText().toString(),
+                matchType.getText().toString(),
+
+                autoHighGoalCount.getText().toString(),
+                autoLowGoalCount.getText().toString(),
+                String.valueOf(autoExitCheckbox.isChecked()),
+
+                teleHighGoalCount.getText().toString(),
+                teleLowGoalCount.getText().toString(),
+                climbLevel.getText().toString(),
+
+                foulSpinner.getSelectedItem().toString(),
+                techFoulSpinner.getSelectedItem().toString(),
+                String.valueOf(yellowCardCheckbox.isChecked()),
+                String.valueOf(redCardCheckbox.isChecked()),
+                String.valueOf(disabledCheckbox.isChecked()),
+                String.valueOf(brokenCheckbox.isChecked()),
+        };
+
+        StringBuilder fin = new StringBuilder();
+        for (String param : params) {
+            fin.append(param);
+            fin.append("^");
+        }
+        fin.append(qual);
         
-        return fin;
+        return fin.toString();
     }
 
     public void q(View v){
@@ -137,28 +179,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode, resultCode, data);
         String returnValue = "";
-        switch(requestCode) {
-            case (1) : {
-                if (resultCode == Activity.RESULT_OK) {
-                    // TODO Extract the data returned from the child Activity.
-                    returnValue = data.getStringExtra("data1");
-                }
-                break;
+        if (requestCode == 1) {
+            if (resultCode == Activity.RESULT_OK) {
+                // TODO Extract the data returned from the child Activity.
+                returnValue = data.getStringExtra("data1");
             }
         }
         String s = returnValue;
-        String fin1 = "";
+        String fin1;
         if(s.isEmpty()){
             fin1 = getData(" ");
         }else {
             fin1 = getData(s);
         }
 
-        //Check if payload is null, otherwise open QR activity and pass payload
+        // Check if payload is null, otherwise open QR activity and pass payload
         if (fin1.isEmpty()) {
             Toast.makeText(this, "Invalid Text", Toast.LENGTH_SHORT).show();
         } else {
-            Spinner spinner4a = findViewById(R.id.spinner4);
+            Spinner spinner4a = findViewById(R.id.teamNumberSpinner);
             Intent intent = new Intent(this, QRActivity.class);
             intent.putExtra("payload", fin1);
             intent.putExtra("team", spinner4a.getSelectedItem().toString());

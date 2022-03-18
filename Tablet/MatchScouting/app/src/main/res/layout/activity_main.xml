@@ -43,206 +43,365 @@
                     android:layout_height="match_parent">
 
                     <LinearLayout
-                        android:id="@+id/Teleop"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <android.support.constraint.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <CheckBox
-                                android:id="@+id/checkBox2"
-                                android:layout_width="203dp"
-                                android:layout_height="17dp"
-                                android:text="Pick up cubes from ground"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.501"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/spinner7" />
-
-                            <Spinner
-                                android:id="@+id/spinner5"
-                                android:layout_width="190dp"
-                                android:layout_height="40dp"
-                                android:layout_marginEnd="40dp"
-                                android:entries="@array/ten"
-                                app:layout_constraintBottom_toTopOf="@+id/spinner6"
-                                app:layout_constraintEnd_toStartOf="@+id/checkBox3"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <Spinner
-                                android:id="@+id/spinner6"
-                                android:layout_width="190dp"
-                                android:layout_height="40dp"
-                                android:layout_marginEnd="40dp"
-                                android:entries="@array/ten"
-                                app:layout_constraintBottom_toTopOf="@+id/spinner7"
-                                app:layout_constraintEnd_toStartOf="@+id/checkBox4"
-                                app:layout_constraintTop_toBottomOf="@+id/spinner5" />
-
-                            <Spinner
-                                android:id="@+id/spinner7"
-                                android:layout_width="190dp"
-                                android:layout_height="40dp"
-                                android:entries="@array/ten"
-                                app:layout_constraintBottom_toTopOf="@+id/checkBox2"
-                                app:layout_constraintEnd_toStartOf="@+id/checkBox5"
-                                app:layout_constraintHorizontal_bias="0.612"
-                                app:layout_constraintStart_toEndOf="@+id/textView8"
-                                app:layout_constraintTop_toBottomOf="@+id/spinner6" />
-
-                            <TextView
-                                android:id="@+id/textView6"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="52dp"
-                                android:text="Switch:"
-                                android:textColor="@android:color/black"
-                                app:layout_constraintEnd_toStartOf="@+id/spinner5"
-                                app:layout_constraintHorizontal_bias="0.591"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <TextView
-                                android:id="@+id/textView7"
-                                android:layout_width="wrap_content"
-                                android:layout_height="22dp"
-                                android:text="Scale:"
-                                android:textColor="@android:color/black"
-                                app:layout_constraintBottom_toTopOf="@+id/textView8"
-                                app:layout_constraintEnd_toStartOf="@+id/spinner6"
-                                app:layout_constraintHorizontal_bias="0.61"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-                            <TextView
-                                android:id="@+id/textView8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="19dp"
-                                android:layout_marginBottom="96dp"
-                                android:text="Return Slot (Wall):"
-                                android:textColor="@android:color/black"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/checkBox5"
-                                app:layout_constraintHorizontal_bias="0.08"
-                                app:layout_constraintStart_toStartOf="parent" />
-
-                            <CheckBox
-                                android:id="@+id/checkBox3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginEnd="76dp"
-                                android:text="Climbed?"
-                                app:layout_constraintBottom_toTopOf="@+id/checkBox4"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <CheckBox
-                                android:id="@+id/checkBox4"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginEnd="28dp"
-                                android:text="Support a robot?"
-                                app:layout_constraintBottom_toTopOf="@+id/checkBox5"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
-
-                            <CheckBox
-                                android:id="@+id/checkBox5"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginEnd="40dp"
-                                android:text="Share the bar?"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
-
-                        </android.support.constraint.ConstraintLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
                         android:id="@+id/Auto"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
-                        <android.support.constraint.ConstraintLayout
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="bottom"
+                            android:orientation="vertical">
 
-                            <TextView
-                                android:id="@+id/textView3"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/scale"
-                                android:textColor="@android:color/black"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/spinner2"
-                                app:layout_constraintHorizontal_bias="0.5"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView2"
-                                app:layout_constraintVertical_bias="0.265" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|start"
+                                android:orientation="vertical"
+                                android:padding="10dp">
 
-                            <TextView
-                                android:id="@+id/textView2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="36dp"
-                                android:text="@string/tswitch"
-                                android:textColor="@android:color/black"
-                                app:layout_constraintEnd_toStartOf="@+id/spinner"
-                                app:layout_constraintHorizontal_bias="0.5"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/checkBoxACube" />
+                                <TextView
+                                    android:id="@+id/autoHighGoalLabel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="@string/high_goal"
+                                    android:textColor="@android:color/black"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/autoHighGoalDec"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="#F4A0A0"
+                                        android:onClick="count"
+                                        android:text="@string/minus"
+                                        android:textSize="24sp"
+                                        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+                                    <TextView
+                                        android:id="@+id/autoHighGoalCount"
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/zero"
+                                        android:textAlignment="center"
+                                        android:textSize="20sp" />
+
+                                    <Button
+                                        android:id="@+id/autoHighGoalInc"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="#96F8B2"
+                                        android:onClick="count"
+                                        android:text="@string/plus"
+                                        android:textSize="24sp"
+                                        tools:ignore="DuplicateSpeakableTextCheck" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center|start"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:id="@+id/autoLowGoalLabel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="@string/low_goal"
+                                    android:textColor="@android:color/black"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/autoLowGoalDec"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="#F4A0A0"
+                                        android:onClick="count"
+                                        android:text="@string/minus"
+                                        android:textSize="24sp"
+                                        tools:ignore="TextContrastCheck" />
+
+                                    <TextView
+                                        android:id="@+id/autoLowGoalCount"
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/zero"
+                                        android:textAlignment="center"
+                                        android:textSize="20sp" />
+
+                                    <Button
+                                        android:id="@+id/autoLowGoalInc"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="#96F8B2"
+                                        android:onClick="count"
+                                        android:text="@string/plus"
+                                        android:textSize="24sp"
+                                        tools:ignore="TextContrastCheck" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="20dp">
 
                             <CheckBox
-                                android:id="@+id/checkBoxALine"
-                                android:layout_width="wrap_content"
-                                android:layout_height="27dp"
-                                android:layout_marginTop="36dp"
-                                android:text="@string/aline"
-                                app:layout_constraintEnd_toStartOf="@+id/spinner"
-                                app:layout_constraintHorizontal_bias="0.382"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <CheckBox
-                                android:id="@+id/checkBoxACube"
+                                android:id="@+id/autoExitCheckbox"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="24dp"
-                                android:text="@string/acube"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.074"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/checkBoxALine" />
+                                android:layout_marginEnd="10dp"
+                                android:minHeight="48dp"
+                                android:text="@string/exit_tarmac" />
+                        </LinearLayout>
 
-                            <Spinner
-                                android:id="@+id/spinner"
-                                android:layout_width="290dp"
-                                android:layout_height="40dp"
-                                android:layout_marginTop="144dp"
-                                android:entries="@array/five"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.491"
-                                app:layout_constraintStart_toEndOf="@+id/textView2"
-                                app:layout_constraintTop_toTopOf="parent" />
+                    </LinearLayout>
 
-                            <Spinner
-                                android:id="@+id/spinner2"
-                                android:layout_width="290dp"
-                                android:layout_height="40dp"
-                                android:entries="@array/five"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintHorizontal_bias="0.48"
-                                app:layout_constraintStart_toEndOf="@+id/textView3"
-                                app:layout_constraintTop_toBottomOf="@+id/spinner"
-                                app:layout_constraintVertical_bias="0.134" />
-                        </android.support.constraint.ConstraintLayout>
+                    <LinearLayout
+                        android:id="@+id/Teleop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="bottom"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center|start"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:id="@+id/teleHighGoalLabel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="@string/high_goal"
+                                    android:textColor="@android:color/black"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/teleHighGoalDec"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="#F4A0A0"
+                                        android:onClick="count"
+                                        android:text="@string/minus"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:id="@+id/teleHighGoalCount"
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/zero"
+                                        android:textAlignment="center"
+                                        android:textSize="20sp" />
+
+                                    <Button
+                                        android:id="@+id/teleHighGoalInc"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="#96F8B2"
+                                        android:onClick="count"
+                                        android:text="@string/plus"
+                                        android:textSize="24sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center|start"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:id="@+id/teleLowGoalLabel"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="@string/low_goal"
+                                    android:textColor="@android:color/black"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/teleLowGoalDec"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="#F4A0A0"
+                                        android:onClick="count"
+                                        android:text="@string/minus"
+                                        android:textSize="24sp" />
+
+                                    <TextView
+                                        android:id="@+id/teleLowGoalCount"
+                                        android:layout_width="30dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/zero"
+                                        android:textAlignment="center"
+                                        android:textSize="20sp" />
+
+                                    <Button
+                                        android:id="@+id/teleLowGoalInc"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:backgroundTint="#96F8B2"
+                                        android:onClick="count"
+                                        android:text="@string/plus"
+                                        android:textSize="24sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="20dp">
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:id="@+id/teleClimbLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/climb_status"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.25" />
+
+                            <RadioGroup
+                                android:id="@+id/teleClimbRadioGroup"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/teleClimbBar4Button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minHeight="48dp"
+                                    android:onClick="refreshInit"
+                                    android:text="@string/bar_4" />
+
+                                <RadioButton
+                                    android:id="@+id/teleClimbBar3Button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minHeight="48dp"
+                                    android:onClick="refreshInit"
+                                    android:text="@string/bar_3" />
+
+                                <RadioButton
+                                    android:id="@+id/teleClimbBar2Button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minHeight="48dp"
+                                    android:onClick="refreshInit"
+                                    android:text="@string/bar_2" />
+
+                                <RadioButton
+                                    android:id="@+id/teleClimbBar1Button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minHeight="48dp"
+                                    android:onClick="refreshInit"
+                                    android:text="@string/bar_1" />
+
+                                <RadioButton
+                                    android:id="@+id/teleClimbBar0Button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minHeight="48dp"
+                                    android:onClick="refreshInit"
+                                    android:text="@string/no_climb" />
+                            </RadioGroup>
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>
+
                     </LinearLayout>
 
                 </FrameLayout>
@@ -296,51 +455,55 @@
                             android:layout_height="match_parent">
 
                             <TextView
-                                android:id="@+id/textView4"
+                                android:id="@+id/teamNumberLabel"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Team Number:"
+                                android:text="@string/team_number"
                                 android:textColor="@android:color/black"
-                                app:layout_constraintBottom_toTopOf="@+id/textView5"
-                                app:layout_constraintEnd_toStartOf="@+id/spinner4"
+                                app:layout_constraintBottom_toTopOf="@+id/matchNumberLabel"
+                                app:layout_constraintEnd_toStartOf="@+id/teamNumberSpinner"
                                 app:layout_constraintHorizontal_bias="0.5"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
-                                android:id="@+id/textView5"
+                                android:id="@+id/matchNumberLabel"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Match Number:"
+                                android:text="@string/match_number"
                                 android:textColor="@android:color/black"
-                                app:layout_constraintBottom_toTopOf="@+id/radioGroup3"
-                                app:layout_constraintEnd_toStartOf="@+id/editText5"
+                                app:layout_constraintBottom_toTopOf="@+id/allianceRadioGroup"
+                                app:layout_constraintEnd_toStartOf="@+id/matchNumberInput"
                                 app:layout_constraintHorizontal_bias="0.5"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                                app:layout_constraintTop_toBottomOf="@+id/teamNumberLabel"
+                                tools:ignore="SpeakableTextPresentCheck" />
 
                             <EditText
-                                android:id="@+id/editText5"
+                                android:id="@+id/matchNumberInput"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:ems="10"
+                                android:importantForAutofill="no"
                                 android:inputType="number"
-                                app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+                                android:minHeight="48dp"
+                                app:layout_constraintBottom_toTopOf="@+id/stationRadioGroup"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintHorizontal_bias="0.5"
-                                app:layout_constraintStart_toEndOf="@+id/textView5"
-                                app:layout_constraintTop_toBottomOf="@+id/spinner4" />
+                                app:layout_constraintStart_toEndOf="@+id/matchNumberLabel"
+                                app:layout_constraintTop_toBottomOf="@+id/teamNumberSpinner"
+                                tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
 
                             <RadioGroup
-                                android:id="@+id/radioGroup2"
+                                android:id="@+id/stationRadioGroup"
                                 android:layout_width="92dp"
-                                android:layout_height="87dp"
+                                android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintHorizontal_bias="0.201"
-                                app:layout_constraintStart_toEndOf="@+id/radioGroup3"
-                                app:layout_constraintTop_toBottomOf="@+id/editText5">
+                                app:layout_constraintStart_toEndOf="@+id/allianceRadioGroup"
+                                app:layout_constraintTop_toBottomOf="@+id/matchNumberInput">
 
                                 <RadioButton
                                     android:id="@+id/radioButton3"
@@ -348,7 +511,9 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:checked="false"
-                                    android:text="Station 1" />
+                                    android:minHeight="48dp"
+                                    android:onClick="refreshInit"
+                                    android:text="@string/station_1" />
 
                                 <RadioButton
                                     android:id="@+id/radioButton2"
@@ -356,7 +521,9 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:checked="false"
-                                    android:text="Station 2" />
+                                    android:minHeight="48dp"
+                                    android:onClick="refreshInit"
+                                    android:text="@string/station_2" />
 
                                 <RadioButton
                                     android:id="@+id/radioButton"
@@ -364,17 +531,19 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:checked="false"
-                                    android:text="Station 3" />
+                                    android:minHeight="48dp"
+                                    android:onClick="refreshInit"
+                                    android:text="@string/station_3" />
                             </RadioGroup>
 
                             <RadioGroup
-                                android:id="@+id/radioGroup3"
+                                android:id="@+id/allianceRadioGroup"
                                 android:layout_width="118dp"
-                                android:layout_height="58dp"
+                                android:layout_height="wrap_content"
                                 android:layout_marginStart="72dp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView5">
+                                app:layout_constraintTop_toBottomOf="@+id/matchNumberLabel">
 
                                 <RadioButton
                                     android:id="@+id/radioButton4"
@@ -382,7 +551,9 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:checked="false"
-                                    android:text="Red Alliance" />
+                                    android:minHeight="48dp"
+                                    android:onClick="refreshInit"
+                                    android:text="@string/red_alliance" />
 
                                 <RadioButton
                                     android:id="@+id/radioButton5"
@@ -390,29 +561,31 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:checked="false"
-                                    android:text="Blue Alliance" />
+                                    android:minHeight="48dp"
+                                    android:onClick="refreshInit"
+                                    android:text="@string/blue_alliance" />
                             </RadioGroup>
 
                             <Spinner
-                                android:id="@+id/spinner4"
+                                android:id="@+id/teamNumberSpinner"
                                 android:layout_width="212dp"
-                                android:layout_height="35dp"
+                                android:layout_height="48dp"
                                 android:entries="@array/teams"
-                                app:layout_constraintBottom_toTopOf="@+id/editText5"
+                                app:layout_constraintBottom_toTopOf="@+id/matchNumberInput"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintHorizontal_bias="0.5"
-                                app:layout_constraintStart_toEndOf="@+id/textView4"
+                                app:layout_constraintStart_toEndOf="@+id/teamNumberLabel"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <RadioGroup
-                                android:id="@+id/radioGroup"
+                                android:id="@+id/matchTypeRadioGroup"
                                 android:layout_width="97dp"
-                                android:layout_height="47dp"
+                                android:layout_height="wrap_content"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintHorizontal_bias="0.5"
-                                app:layout_constraintStart_toEndOf="@+id/radioGroup2"
-                                app:layout_constraintTop_toBottomOf="@+id/editText5">
+                                app:layout_constraintStart_toEndOf="@+id/stationRadioGroup"
+                                app:layout_constraintTop_toBottomOf="@+id/matchNumberInput">
 
                                 <RadioButton
                                     android:id="@+id/radioButton6"
@@ -420,7 +593,9 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:checked="false"
-                                    android:text="Practice" />
+                                    android:minHeight="48dp"
+                                    android:onClick="refreshInit"
+                                    android:text="@string/practice" />
 
                                 <RadioButton
                                     android:id="@+id/radioButton7"
@@ -428,7 +603,10 @@
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
                                     android:checked="false"
-                                    android:text="Qualifying" />
+                                    android:minHeight="48dp"
+                                    android:onClick="refreshInit"
+                                    android:text="@string/qualifying"
+                                    tools:ignore="TouchTargetSizeCheck" />
                             </RadioGroup>
                         </android.support.constraint.ConstraintLayout>
 
@@ -445,92 +623,92 @@
                             android:layout_height="match_parent">
 
                             <Spinner
-                                android:id="@+id/spinner8"
+                                android:id="@+id/foulSpinner"
                                 android:layout_width="190dp"
                                 android:layout_height="40dp"
                                 android:layout_marginTop="36dp"
                                 android:entries="@array/ten"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintHorizontal_bias="0.189"
-                                app:layout_constraintStart_toEndOf="@+id/textView9"
+                                app:layout_constraintStart_toEndOf="@+id/foulsLabel"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <Spinner
-                                android:id="@+id/spinner9"
+                                android:id="@+id/techFoulSpinner"
                                 android:layout_width="190dp"
                                 android:layout_height="40dp"
                                 android:layout_marginTop="24dp"
                                 android:entries="@array/ten"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintHorizontal_bias="0.18"
-                                app:layout_constraintStart_toEndOf="@+id/textView10"
-                                app:layout_constraintTop_toBottomOf="@+id/spinner8" />
+                                app:layout_constraintStart_toEndOf="@+id/techFoulsLabel"
+                                app:layout_constraintTop_toBottomOf="@+id/foulSpinner" />
 
                             <CheckBox
-                                android:id="@+id/checkBox6"
+                                android:id="@+id/yellowCardCheckbox"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Yellow Card"
-                                app:layout_constraintBottom_toTopOf="@+id/checkBox8"
-                                app:layout_constraintEnd_toStartOf="@+id/checkBox7"
+                                android:text="@string/yellow_card"
+                                app:layout_constraintBottom_toTopOf="@+id/redCardCheckbox"
+                                app:layout_constraintEnd_toStartOf="@+id/disabledCheckbox"
                                 app:layout_constraintHorizontal_bias="0.5"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/spinner9" />
+                                app:layout_constraintTop_toBottomOf="@+id/techFoulSpinner" />
 
                             <CheckBox
-                                android:id="@+id/checkBox7"
+                                android:id="@+id/disabledCheckbox"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Disabled"
-                                app:layout_constraintBottom_toTopOf="@+id/checkBox9"
+                                android:text="@string/disabled"
+                                app:layout_constraintBottom_toTopOf="@+id/brokenCheckbox"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintHorizontal_bias="0.5"
-                                app:layout_constraintStart_toEndOf="@+id/checkBox6"
-                                app:layout_constraintTop_toBottomOf="@+id/spinner9" />
+                                app:layout_constraintStart_toEndOf="@+id/yellowCardCheckbox"
+                                app:layout_constraintTop_toBottomOf="@+id/techFoulSpinner" />
 
                             <CheckBox
-                                android:id="@+id/checkBox8"
+                                android:id="@+id/redCardCheckbox"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Red Card"
+                                android:text="@string/red_card"
                                 app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toStartOf="@+id/checkBox9"
+                                app:layout_constraintEnd_toStartOf="@+id/brokenCheckbox"
                                 app:layout_constraintHorizontal_bias="0.5"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+                                app:layout_constraintTop_toBottomOf="@+id/yellowCardCheckbox" />
 
                             <CheckBox
-                                android:id="@+id/checkBox9"
+                                android:id="@+id/brokenCheckbox"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Broken"
+                                android:text="@string/broken"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintHorizontal_bias="0.5"
-                                app:layout_constraintStart_toEndOf="@+id/checkBox8"
-                                app:layout_constraintTop_toBottomOf="@+id/checkBox7" />
+                                app:layout_constraintStart_toEndOf="@+id/redCardCheckbox"
+                                app:layout_constraintTop_toBottomOf="@+id/disabledCheckbox" />
 
                             <TextView
-                                android:id="@+id/textView9"
+                                android:id="@+id/foulsLabel"
                                 android:layout_width="wrap_content"
                                 android:layout_height="18dp"
                                 android:layout_marginStart="120dp"
-                                android:text="Fouls:"
+                                android:text="@string/fouls"
                                 android:textColor="@android:color/black"
-                                app:layout_constraintBottom_toTopOf="@+id/textView10"
+                                app:layout_constraintBottom_toTopOf="@+id/techFoulsLabel"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
-                                android:id="@+id/textView10"
+                                android:id="@+id/techFoulsLabel"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="88dp"
-                                android:text="Tech Fouls:"
+                                android:text="@string/tech_fouls"
                                 android:textColor="@android:color/black"
-                                app:layout_constraintBottom_toTopOf="@+id/checkBox6"
+                                app:layout_constraintBottom_toTopOf="@+id/yellowCardCheckbox"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                                app:layout_constraintTop_toBottomOf="@+id/foulsLabel" />
 
                         </android.support.constraint.ConstraintLayout>
                     </LinearLayout>
@@ -552,12 +730,13 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="275dp"
+            android:id="@+id/finishButton"
+            android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
+            android:enabled="false"
             android:onClick="onButton"
-            android:text="Qualitative and Finish"
+            android:text="@string/qual_and_finish"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button3"
             app:layout_constraintHorizontal_bias="0.5"

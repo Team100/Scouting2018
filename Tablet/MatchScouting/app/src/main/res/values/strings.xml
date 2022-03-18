@@ -1,14 +1,14 @@
 <resources>
-    <string name="app_name">Match Scouting 2018</string>
-    <string name="text">Text</string>
+    <string name="app_name">Match Scouting 2022</string>
+<!--    <string name="text">Text</string>-->
     <string name="qr">Generate QR Code</string>
-    <string name="checkbox">CheckBox</string>
+<!--    <string name="checkbox">CheckBox</string>-->
     <string name="exit">Tap to exit</string>
     <string name="qr_description">QR Code</string>
-    <string name="aline">Cross auto line?</string>
-    <string name="acube">Cube(s) placed?</string>
-    <string name="tswitch">Switch:</string>
-    <string name="scale">Scale:</string>
+<!--    <string name="aline">Exit Tarmac?</string>-->
+<!--    <string name="acube">d?</string>-->
+<!--    <string name="tswitch">High Goal:</string>-->
+<!--    <string name="scale">Low Goal:</string>-->
 
     <string-array name="ten">
         <item>0</item>
@@ -23,13 +23,41 @@
         <item>9</item>
         <item>10</item>
     </string-array>
-    <string-array name="five">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-    </string-array>
+<!--    <string-array name="five">-->
+<!--        <item>0</item>-->
+<!--        <item>1</item>-->
+<!--        <item>2</item>-->
+<!--        <item>3</item>-->
+<!--        <item>4</item>-->
+<!--        <item>5</item>-->
+<!--    </string-array>-->
     <string name="title_activity_qual">QualActivity</string>
+    <string name="team_number">Team Number:</string>
+    <string name="match_number">Match Number:</string>
+    <string name="station_1">Station 1</string>
+    <string name="station_2">Station 2</string>
+    <string name="station_3">Station 3</string>
+    <string name="red_alliance">Red Alliance</string>
+    <string name="blue_alliance">Blue Alliance</string>
+    <string name="practice">Practice</string>
+    <string name="qualifying">Qualifying</string>
+    <string name="yellow_card">Yellow Card</string>
+    <string name="disabled">Disabled</string>
+    <string name="red_card">Red Card</string>
+    <string name="broken">Broken</string>
+    <string name="fouls">Fouls:</string>
+    <string name="tech_fouls">Tech Fouls:</string>
+    <string name="qual_and_finish">Qualitative and Finish</string>
+    <string name="high_goal">High Goal:</string>
+    <string name="minus">-</string>
+    <string name="zero">0</string>
+    <string name="plus">+</string>
+    <string name="low_goal">Low Goal:</string>
+    <string name="exit_tarmac">Exit Tarmac</string>
+    <string name="climb_status">Climb Status</string>
+    <string name="bar_4">Bar 4 (Traversal)</string>
+    <string name="bar_3">Bar 3 (High)</string>
+    <string name="bar_2">Bar 2 (Mid)</string>
+    <string name="bar_1">Bar 1 (Low)</string>
+    <string name="no_climb">No Climb</string>
 </resources>
